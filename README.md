@@ -1,3 +1,7 @@
+Mohamed Gamal El_Saied 
+2023037239
+
+
 🧠 Neural Networks Project — MNIST Handwritten Digit Recognition
 📌 Project Overview
 
