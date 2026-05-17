@@ -1,110 +1,125 @@
-# 🧠 Neural Networks Project  
-## MNIST Handwritten Digit Recognition
+# 🧠 Neural Networks Project - MNIST Classification
 
-### 👨‍💻 Student Information
-- **Name:** Mohamed Gamal El-Saied  
-- **ID:** 2023037239  
+## 👨‍💻 Author
 
----
+Mohamed Gamal Elsaied
 
-# 📌 Project Overview
-This project implements a **Multilayer Perceptron (MLP)** neural network to classify handwritten digits (**0–9**) using the **MNIST dataset**.
+## 📌 Project Description
 
-The main objective is to build a simple deep learning model, evaluate its performance, and compare different activation functions.
+This project implements a Multilayer Perceptron (MLP) neural network for handwritten digit classification using the MNIST dataset.
+
+The model is trained to recognize handwritten digits from 0 to 9.
 
 ---
 
-# 📊 Dataset
-The project uses the famous **MNIST dataset**, which contains handwritten digit images.
+## 📊 Dataset
 
-### Dataset Details
+Dataset Used: MNIST Dataset
+
+Dataset Link:
+https://keras.io/api/datasets/mnist/
+
+The dataset contains:
 - 60,000 training images
 - 10,000 testing images
-- Image size: 28 × 28 grayscale
-- Labels: digits from 0 to 9
-
-The dataset is loaded directly using **TensorFlow/Keras**.
+- Image size: 28x28 pixels
 
 ---
 
-# ⚙️ Preprocessing Steps
-The following preprocessing techniques were applied:
+## ⚙️ Data Preprocessing
 
-- Normalization of pixel values (0–255 → 0–1)
-- One-hot encoding of labels
-- Splitting the dataset into training and testing sets
+The following preprocessing steps were applied:
 
----
-
-# 🧠 Model Architecture (MLP)
-
-The neural network is built using a **Multilayer Perceptron (MLP)** architecture:
-
-1. **Input Layer**
-   - Flatten layer converts image size from 28 × 28 → 784
-
-2. **Hidden Layer**
-   - Dense layer with 128 neurons
-
-3. **Dropout Layer**
-   - Dropout rate: 0.2
-   - Used to reduce overfitting
-
-4. **Output Layer**
-   - 10 neurons
-   - Softmax activation for classification
+- Normalization of pixel values
+- One-Hot Encoding for labels
+- Splitting data into training and testing sets
 
 ---
 
-# 🚀 Training Details
-- **Optimizer:** Adam
-- **Loss Function:** Categorical Crossentropy
-- **Epochs:** 10
-- **Validation Split:** 20%
+## 🧠 Model Architecture
+
+The implemented model is a Multilayer Perceptron (MLP) consisting of:
+
+- Input Layer
+- Hidden Layer
+- Dropout Layer
+- Output Layer
+
+Activation Functions Used:
+- ReLU
+- Tanh
+
+Loss Function:
+- Categorical Crossentropy
+
+Optimizer:
+- Adam
 
 ---
 
-# 🧪 Experiments
+## 🚀 Training
 
-## Experiment 1
-- **Activation Function:** ReLU
-- **Accuracy:** ~97.7%
-- **Loss:** ~0.080
+The model was trained using:
+- Epochs = 10
+- Validation Split = 20%
 
-## Experiment 2
-- **Activation Function:** Tanh
-- **Accuracy:** ~97.1%
-- **Loss:** ~0.090
+Training performance was monitored using:
+- Loss
+- Accuracy
 
 ---
 
-# 📈 Results Comparison
+## 🧪 Experiments
+
+Two experiments were performed:
+
+### Experiment 1
+Activation Function: ReLU
+
+Results:
+- Accuracy: 97.72%
+- Loss: 0.0801
+
+---
+
+### Experiment 2
+Activation Function: Tanh
+
+Results:
+- Accuracy: 97.16%
+- Loss: 0.0902
+
+---
+
+## 📈 Visualizations
+
+The project includes:
+- Training vs Validation Loss Curves
+- Training vs Validation Accuracy Curves
+
+---
+
+## 📋 Results Comparison
 
 | Model | Activation Function | Accuracy | Loss |
-|------|-------------------|----------|------|
-| Model 1 | ReLU | 97.7% | 0.080 |
-| Model 2 | Tanh | 97.1% | 0.090 |
+|------|--------------------|----------|------|
+| Model 1 | ReLU | 97.72% | 0.0801 |
+| Model 2 | Tanh | 97.16% | 0.0902 |
 
 ---
 
-# 📊 Visualizations Included
-- Training vs Validation Loss Curve
-- Training vs Validation Accuracy Curve
-- Confusion Matrix
-- Sample Predictions Visualization
+## ▶️ How to Run
+
+1. Open the notebook in Google Colab
+2. Run all cells step by step
+3. View training results and graphs
 
 ---
 
-# 🧾 Evaluation Metrics
-The following evaluation metrics were used:
+## 📁 Project Files
 
-- Accuracy (Classification Performance)
-- Loss Value
-- Confusion Matrix Analysis
-
----
-
-# 📌 Conclusion
-The **ReLU** activation function achieved better performance than **Tanh** in terms of both **accuracy** and **loss**.
-
-This indicates that **ReLU** is more suitable for handwritten digit classification using the MNIST dataset and MLP neural networks.
+```text
+MNIST_MLP_Project.ipynb
+README.md
+Loss Curve.png
+Accuracy Curve.png
