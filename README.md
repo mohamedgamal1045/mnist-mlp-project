@@ -121,5 +121,3 @@ The project includes:
 ```text
 MNIST_MLP_Project.ipynb
 README.md
-Loss Curve.png
-Accuracy Curve.png
